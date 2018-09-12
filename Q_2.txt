@@ -1,0 +1,27 @@
+import java.util.*;
+class String1
+{
+ public static void main(String[] args)
+ {
+     
+     Scanner br=new Scanner(System.in);
+     int i,s,k=0;
+     String a;
+     a=br.nextLine();
+     for(i=0;i<a.length();i++)
+     {
+         s=(int)a.charAt(i);
+         if(s!=' ')
+         {
+             if(s>=65 && s<=90)
+             k=s+32;
+             if(s>=97 && s<=122)
+             k=s-32;
+             System.out.print((char)k);
+            }
+            else
+            System.out.print(" ");
+        }
+        
+    }
+}

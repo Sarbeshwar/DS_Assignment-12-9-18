@@ -1,0 +1,21 @@
+import java.util.*;
+public class String1 
+{
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        String a=sc.nextLine();
+        StringBuilder b=new StringBuilder();
+        b=b.append(a);
+        b=b.reverse();
+        System.out.println(b);
+        if(b.equals(a))
+        {
+            System.out.println("Not PAllindrom");
+        }
+        else
+        {
+            System.out.println("PAllindrom");
+        }
+    }
+}
